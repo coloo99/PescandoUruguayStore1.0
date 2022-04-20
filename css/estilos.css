@@ -1,0 +1,468 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+
+.logo-pag { /*Logo redondo de la pagina*/
+    background-image: url(../imagenes_pagina/LogoPescandoUruguayConLetras.png);
+    margin-left: 1%;
+    margin-top: 0px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-size: contain;
+    z-index: 1;
+}
+
+.show {
+    z-index: 1;
+}
+
+.boton-nav { /*Botones del menu nav*/
+    margin-left: 20px;
+    box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+}
+/*FIN HEADER*/
+
+.index-grid {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(108, 168, 221);
+}
+
+/*CARRUSELES*/
+
+div.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 100%;
+}
+
+div.carousel {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row; 
+    object-fit: contain;
+    width: 98%;
+    height: 200px;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row; 
+    object-fit: contain;
+    width: 100%;
+    height: 200px;        
+}
+
+.carousel-item img{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row; 
+    object-fit: contain;
+    width: 100%;
+    height: 200px;        
+}
+/*FIN CARRUSELES INDEX*/
+
+/*PROVEEDORES*/
+
+.index_grid_prov {
+    background-color: rgb(149, 179, 205);
+}
+
+.cont_prov {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row_prov {
+    width: 332px;
+}
+
+.mapa_prov {
+    width: 100%;
+    height: 100%;
+}
+
+/*FIN PROVEEDORES*/
+
+
+/*PRODUCTOS PROVISIONAL SIN BOOTSTRAP*/
+/*GRIDS*/
+body main article {  /*Borde de los article*/
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border: 1px solid rgb(12, 138, 211);
+}
+
+/*Seccion señuelos*/
+
+.item {
+    grid-area: titulo;
+    object-fit: contain;
+    text-align: center;
+    color: rgb(12, 130, 209);
+}
+
+.item1 {
+    grid-area: item1;
+    background-image: url(../imagenes_prod/senuelos/rapala_dt1_fat01.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item2 {
+    grid-area: item2;
+    background-image: url(../imagenes_prod/senuelos/fishunter.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item3 {
+    grid-area: item3;
+    background-image: url(../imagenes_prod/senuelos/articulado.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item4 {
+    grid-area: item4;
+    background-image: url(../imagenes_prod/senuelos/colony_power_head.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item5 {
+    grid-area: item5;
+    background-image: url(../imagenes_prod/senuelos/raton_antienganche.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item6 {
+    grid-area: item6;
+    background-image: url(../imagenes_prod/senuelos/spinner.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item7 {
+    grid-area: item7;
+    background-image: url(../imagenes_prod/senuelos/strom_deep_mag.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item8 {
+    grid-area: item8;
+    background-image: url(../imagenes_prod/senuelos/strom_deep_mag.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item9 {
+    grid-area: item9;
+    background-image: url(../imagenes_prod/senuelos/sapozilla_naranja.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Seccion Cañas*/
+.tituloc {
+    grid-area: tituloc;
+    object-fit: contain;
+    text-align: center;
+    color: rgb(12, 130, 209);
+}
+
+.itemc1 {
+    grid-area: itemc1;
+    background-image: url(../imagenes_prod/canias/cana_crocodile_fibradevidrio_180.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc2 {
+    grid-area: itemc2;
+    background-image: url(../imagenes_prod/canias/cana_daiwa_laguna_boat.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc3 {
+    grid-area: itemc3;
+    background-image: url(../imagenes_prod/canias/caña_pesca_fly.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc4 {
+    grid-area: itemc4;
+    background-image: url(../imagenes_prod/canias/caña_spinning_fiblink_agua_salada.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc5 {
+    grid-area: itemc5;
+    background-image: url(../imagenes_prod/canias/caña_spinning_señuelo.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc6 {
+    grid-area: itemc6;
+    background-image: url(../imagenes_prod/canias/caña_spinning_señuelo_210.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc7 {
+    grid-area: itemc7;
+    background-image: url(../imagenes_prod/senuelos/spinner.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc8 {
+    grid-area: itemc8;
+    background-image: url(../imagenes_prod/senuelos/strom_deep_mag.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itemc9 {
+    grid-area: itemc9;
+    background-image: url(../imagenes_prod/senuelos/sapozilla_naranja.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.index_grid {
+    display: grid;
+    grid-template-rows: 50px repeat(3, 1fr) 50px repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9"
+    "tituloc tituloc tituloc"
+    "itemc1 itemc2 itemc3"
+    "itemc4 itemc5 itemc6"
+    "itemc7 itemc8 itemc9";
+    width: 100%;
+    height: 1200px;
+}
+/*FIN PRODUCTOS*/
+
+
+/*FOOTER*/
+
+footer { /*Fondo del footer*/
+    background-image: linear-gradient(to bottom, rgba(17, 69, 166, 0.926), rgba(1, 18, 48, 0.926)); /* Aplique gradiente al footer */
+}
+
+.titulofootletras { /*Titulo del footer*/
+    color: aliceblue;
+}
+
+/*Grid general del footer*/
+.titulofoot {
+    grid-area: titulofoot;
+    object-fit: contain;
+    text-align: center;
+}
+
+.videoyt {
+    grid-area: videoyt;
+    width: 150px;
+    height: 70px;
+    margin-left: 8px;
+}
+
+.ubicacionfoot {
+    grid-area: ubicacionfoot;
+    object-fit: contain;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
+    color: aliceblue;
+}
+
+.footer_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 85%;
+    grid-template-areas: 
+    "titulofoot titulofoot titulofoot"
+    "contactofoot redesfoot ubicacionfoot";
+    width: 100%;
+    height: 200px;
+}
+/*Fin grid general del footer*/
+
+/*Contactos footer*/
+.contacto_foot-titulo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 10%;
+    grid-area: contacto_titulo;
+}
+.logos_contactos1{
+    grid-area: logos_contactos1;
+}
+
+.logos_contactos2{
+    grid-area: logos_contactos2;
+}
+
+.contactofoot {
+    grid-area: contactofoot;
+    object-fit: contain;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
+    color: aliceblue;
+    list-style:none;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+    "... contacto_titulo contacto_titulo ..."
+    "... logos_contactos1 logos_contactos2 ...";
+    justify-content: center;
+    align-items: center; 
+}
+
+.imagenes_footer-contacto {
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+}
+/*Fin contactos*/
+
+/*Redes del footer*/
+.logos_redes1{
+    grid-area: logos_redes1;
+}
+
+.logos_redes2{
+    grid-area: logos_redes2;
+}
+
+.redesfoot {
+    grid-area: redesfoot;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+    "... logos_redes1 logos_redes2 ..."
+    "... videoyt videoyt ...";
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
+    color: aliceblue;
+}
+
+.imagenes_footer-redes {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+}
+/*Fin redes*/
+
+/*Donde nos encontramos*/
+.titulomapainfofoot {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    color: aliceblue;
+}
+
+.mapainfofoot {
+    width: 50%;
+    height: 60%;
+}
+/*Fin donde nos encontramos*/
+
+/* Querys del footer */
+@media screen and (max-width: 768px) {
+
+    .contactofoottitulo {
+        margin-top: 40%;
+    }
+
+    .mapainfofoot {
+        width: 70%;
+        height: 60%;
+    }
+
+    .videoyt {
+        width: 80%;
+        height: 50%;
+    }
+
+    .imagenes_footer {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*FIN FOOTER*/
