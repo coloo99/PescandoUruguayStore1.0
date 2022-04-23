@@ -5,6 +5,12 @@
 
 /*HEADER*/
 
+
+
+
+
+
+
 .logo-pag { /*Logo redondo de la pagina*/
     background-image: url(../imagenes_pagina/LogoPescandoUruguayConLetras.png);
     margin-left: 1%;
@@ -34,7 +40,18 @@
     margin-left: 20px;
     box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
     color: white !important;
+
 }
+.boton-nav:hover {
+    transform: scale(0.9);
+    background-color: rgb(25, 123, 209);
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    background-color: rgb(25, 123, 209) !important;
+}
+
 /*FIN HEADER*/
 
 .index-grid {
@@ -62,7 +79,7 @@ div.carousel {
     flex-direction: row; 
     object-fit: contain;
     width: 98%;
-    height: 200px;
+    height: 300px;
     border: 2px ridge #0d4a8c;
 }
 
@@ -73,7 +90,7 @@ div.carousel {
     flex-direction: row; 
     object-fit: contain;
     width: 100%;
-    height: 200px;    
+    height: 300px;    
 }
 
 .boton_carrusel {
@@ -87,8 +104,39 @@ div.carousel {
     flex-direction: row; 
     object-fit: contain;
     width: 100%;
-    height: 200px;        
+    height: 300px;        
 }
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+    cursor: pointer;
+}
+
+.carousel-item .img_fishhunter {
+    height: 600px;
+    margin-bottom: 110px;
+}
+
+.carousel-item .img_rapalashad {
+    margin-bottom: 110px;
+}
+
+.carousel-item .img_cañacocodrilofibra {
+    height: 200px;
+}
+
+.carousel-item .img_cañadaiwalaguna {
+    height: 600px;
+}
+
+.carousel-item .img_cañafly {
+    height: 400px;
+}
+
 /*FIN CARRUSELES INDEX*/
 
 /*PROVEEDORES*/
@@ -101,9 +149,23 @@ div.carousel {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px !important;
+    width: 100%;
 }
-.row_prov {
-    width: 332px;
+
+.row-cols-md-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.col_prov{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px !important;
 }
 
 .mapa_prov {
@@ -131,11 +193,12 @@ body main article {  /*Borde de los article*/
     object-fit: contain;
     text-align: center;
     color: rgb(12, 130, 209);
+    height: 40px;
 }
 
 .item1 {
     grid-area: item1;
-    background-image: url(../imagenes_prod/senuelos/rapala_dt1_fat01.jpg);
+    background-image: url(../imagenes_prod/senuelos/rapala_dt1_fat01png.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -144,7 +207,7 @@ body main article {  /*Borde de los article*/
 
 .item2 {
     grid-area: item2;
-    background-image: url(../imagenes_prod/senuelos/fishunter.jpg);
+    background-image: url(../imagenes_prod/senuelos/fishunterpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -153,7 +216,7 @@ body main article {  /*Borde de los article*/
 
 .item3 {
     grid-area: item3;
-    background-image: url(../imagenes_prod/senuelos/articulado.jpg);
+    background-image: url(../imagenes_prod/senuelos/articuladopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -162,7 +225,7 @@ body main article {  /*Borde de los article*/
 
 .item4 {
     grid-area: item4;
-    background-image: url(../imagenes_prod/senuelos/colony_power_head.jpg);
+    background-image: url(../imagenes_prod/senuelos/articuladopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -171,7 +234,7 @@ body main article {  /*Borde de los article*/
 
 .item5 {
     grid-area: item5;
-    background-image: url(../imagenes_prod/senuelos/raton_antienganche.jpg);
+    background-image: url(../imagenes_prod/senuelos/raton_antienganchepng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -180,7 +243,7 @@ body main article {  /*Borde de los article*/
 
 .item6 {
     grid-area: item6;
-    background-image: url(../imagenes_prod/senuelos/spinner.jpg);
+    background-image: url(../imagenes_prod/senuelos/spinnerpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -189,7 +252,7 @@ body main article {  /*Borde de los article*/
 
 .item7 {
     grid-area: item7;
-    background-image: url(../imagenes_prod/senuelos/strom_deep_mag.jpg);
+    background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -198,7 +261,7 @@ body main article {  /*Borde de los article*/
 
 .item8 {
     grid-area: item8;
-    background-image: url(../imagenes_prod/senuelos/strom_deep_mag.jpg);
+    background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -207,7 +270,7 @@ body main article {  /*Borde de los article*/
 
 .item9 {
     grid-area: item9;
-    background-image: url(../imagenes_prod/senuelos/sapozilla_naranja.jpg);
+    background-image: url(../imagenes_prod/senuelos/sapozilla_naranjapng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -220,11 +283,12 @@ body main article {  /*Borde de los article*/
     object-fit: contain;
     text-align: center;
     color: rgb(12, 130, 209);
+    height: 40px;
 }
 
 .itemc1 {
     grid-area: itemc1;
-    background-image: url(../imagenes_prod/canias/cana_crocodile_fibradevidrio_180.jpg);
+    background-image: url(../imagenes_prod/canias/cana_crocodile_fibradevidrio_180png.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -233,7 +297,7 @@ body main article {  /*Borde de los article*/
 
 .itemc2 {
     grid-area: itemc2;
-    background-image: url(../imagenes_prod/canias/cana_daiwa_laguna_boat.jpg);
+    background-image: url(../imagenes_prod/canias/cana_daiwa_laguna_boatpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -242,7 +306,7 @@ body main article {  /*Borde de los article*/
 
 .itemc3 {
     grid-area: itemc3;
-    background-image: url(../imagenes_prod/canias/caña_pesca_fly.jpg);
+    background-image: url(../imagenes_prod/canias/caña_pesca_flypng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -251,7 +315,7 @@ body main article {  /*Borde de los article*/
 
 .itemc4 {
     grid-area: itemc4;
-    background-image: url(../imagenes_prod/canias/caña_spinning_fiblink_agua_salada.jpg);
+    background-image: url(../imagenes_prod/canias/caña_pesca_flypng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -260,7 +324,7 @@ body main article {  /*Borde de los article*/
 
 .itemc5 {
     grid-area: itemc5;
-    background-image: url(../imagenes_prod/canias/caña_spinning_señuelo.jpg);
+    background-image: url(../imagenes_prod/canias/caña_spinning_señuelopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -269,7 +333,7 @@ body main article {  /*Borde de los article*/
 
 .itemc6 {
     grid-area: itemc6;
-    background-image: url(../imagenes_prod/canias/caña_spinning_señuelo_210.jpg);
+    background-image: url(../imagenes_prod/canias/caña_spinning_señuelopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -278,7 +342,7 @@ body main article {  /*Borde de los article*/
 
 .itemc7 {
     grid-area: itemc7;
-    background-image: url(../imagenes_prod/senuelos/spinner.jpg);
+    background-image: url(../imagenes_prod/senuelos/spinnerpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -287,7 +351,7 @@ body main article {  /*Borde de los article*/
 
 .itemc8 {
     grid-area: itemc8;
-    background-image: url(../imagenes_prod/senuelos/strom_deep_mag.jpg);
+    background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -296,7 +360,7 @@ body main article {  /*Borde de los article*/
 
 .itemc9 {
     grid-area: itemc9;
-    background-image: url(../imagenes_prod/senuelos/sapozilla_naranja.jpg);
+    background-image: url(../imagenes_prod/senuelos/sapozilla_naranjapng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
@@ -339,13 +403,6 @@ footer { /*Fondo del footer*/
     text-align: center;
 }
 
-.videoyt {
-    grid-area: videoyt;
-    width: 150px;
-    height: 70px;
-    margin-left: 8px;
-}
-
 .ubicacionfoot {
     grid-area: ubicacionfoot;
     object-fit: contain;
@@ -362,7 +419,7 @@ footer { /*Fondo del footer*/
     "titulofoot titulofoot titulofoot"
     "contactofoot redesfoot ubicacionfoot";
     width: 100%;
-    height: 200px;
+    height: 210px;
 }
 /*Fin grid general del footer*/
 
@@ -418,16 +475,23 @@ footer { /*Fondo del footer*/
     grid-area: logos_redes2;
 }
 
+.videoyt {
+    grid-area: videoyt;
+    width: 100%;
+    height: 70px;
+    margin-left: 8px;
+}
+
 .redesfoot {
     grid-area: redesfoot;
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 40% 60%;
     grid-template-areas: 
-    "... logos_redes1 logos_redes2 ..."
-    "... videoyt videoyt ...";
+    "... logos_redes1 logos_redes1 logos_redes2 logos_redes2 ..."
+    "... ... videoyt videoyt ... ...";
     text-align: center;
     justify-content: center;
     align-items: center; 
@@ -476,8 +540,25 @@ footer { /*Fondo del footer*/
     }
 
     .imagenes_footer {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .redesfoot {
+        grid-area: redesfoot;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 40% 60%;
+        grid-template-areas: 
+        "... logos_redes1 logos_redes1 logos_redes2 logos_redes2 ..."
+        "... videoyt videoyt videoyt videoyt ...";
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
+        color: aliceblue;
     }
 }
 
