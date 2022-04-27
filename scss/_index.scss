@@ -1,0 +1,75 @@
+.index-grid {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorbody;
+    width: $full;
+}
+
+/*CARRUSELES*/
+div.carousel {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row; 
+    object-fit: contain;
+    width: 98%;
+    height: 300px;
+    border: 2px ridge #0d4a8c;
+        .carousel-inner {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-direction: row; 
+            object-fit: contain;
+            width: $full;
+            height: 300px;    
+                .carousel-item{
+                    img{
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        flex-direction: row; 
+                        object-fit: contain;
+                        width: $full;
+                        height: 300px;        
+                    }
+                    .zoom {
+                        transition: transform .2s; 
+                    }
+                    .zoom:hover {
+                        transform: scale(1.5); 
+                        cursor: pointer;
+                    }
+                    .img_fishhunter {
+                        height: 600px;
+                        margin-bottom: 110px;
+                    }
+                    .img_rapalashad {
+                        margin-bottom: 110px;
+                    }
+                    .img_cañacocodrilofibra {
+                        height: 200px;
+                    }
+                    .img_cañadaiwalaguna {
+                        height: 600px;
+                    }
+                    .img_cañafly {
+                        height: 400px;
+                    }
+                }
+        }
+        .boton_carrusel {
+            opacity: 0.3 !important;
+        }
+}
+
+
+
+
+
+
+

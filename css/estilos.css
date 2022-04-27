@@ -1,17 +1,25 @@
+@charset "UTF-8";
+/*Variables para aplicar en los estilos*/
 * {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0; }
 
-/*HEADER*/
+div.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 100%; }
 
+header div .row {
+  background-color: #2ba0c8;
+  min-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px; }
 
-
-
-
-
-
-.logo-pag { /*Logo redondo de la pagina*/
+header div .row_header {
+  margin-right: 0px !important;
+  margin-left: 0px !important; }
+  header div .row_header .logo-pag {
+    /*Logo redondo de la pagina*/
     background-image: url(../imagenes_pagina/LogoPescandoUruguayConLetras.png);
     margin-left: 1%;
     margin-top: 0px;
@@ -19,547 +27,441 @@
     height: 50px;
     object-fit: contain;
     background-size: contain;
-    z-index: 1;
-}
-
-.show {
-    z-index: 1;
-}
-
-.search_css {
-    background-color: gray;
-}
-
-.btn {
+    z-index: 1; }
+  header div .row_header .search_css {
+    background-color: rgba(232, 232, 232, 0.437) !important; }
+  header div .row_header .btn {
     box-shadow: 0 0 5px rgba(4, 8, 27, 0.797) !important;
-    color: rgb(255, 255, 255) !important;
-    border: none !important;
-}
-
-.boton-nav { /*Botones del menu nav*/
+    color: white !important;
+    border: none !important; }
+  header div .row_header .boton-nav {
+    /*Botones del menu nav*/
     margin-left: 20px;
     box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
-    color: white !important;
-
-}
-.boton-nav:hover {
+    color: white !important; }
+  header div .row_header .boton-nav:hover {
     transform: scale(0.9);
-    background-color: rgb(25, 123, 209);
-}
-
-.btn:hover {
+    background-color: #197bd1; }
+  header div .row_header .btn:hover {
     transform: scale(0.9);
-    background-color: rgb(25, 123, 209) !important;
-}
+    background-color: #197bd1 !important; }
+  header div .row_header div ul.nav-css {
+    margin-right: 20px !important; }
 
-/*FIN HEADER*/
+.show {
+  z-index: 1; }
+
+@media screen and (min-width: 992px) {
+  header div.row_header div ul.nav-css {
+    margin-right: auto !important; } }
 
 .index-grid {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(108, 168, 221);
-}
+  display: flex;
+  flex-direction: column;
+  background-color: #1d668d;
+  width: 100%; }
 
 /*CARRUSELES*/
-
-div.container {
-    padding-left: 0px;
-    padding-right: 0px;
-    max-width: 100%;
-}
-
 div.carousel {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-left: 1%;
-    margin-right: 1%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  object-fit: contain;
+  width: 98%;
+  height: 300px;
+  border: 2px ridge #0d4a8c; }
+  div.carousel .carousel-inner {
     display: flex;
     align-items: center;
     justify-items: center;
-    flex-direction: row; 
-    object-fit: contain;
-    width: 98%;
-    height: 300px;
-    border: 2px ridge #0d4a8c;
-}
-
-.carousel-inner {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: row; 
+    flex-direction: row;
     object-fit: contain;
     width: 100%;
-    height: 300px;    
-}
+    height: 300px; }
+    div.carousel .carousel-inner .carousel-item img {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: row;
+      object-fit: contain;
+      width: 100%;
+      height: 300px; }
+    div.carousel .carousel-inner .carousel-item .zoom {
+      transition: transform .2s; }
+    div.carousel .carousel-inner .carousel-item .zoom:hover {
+      transform: scale(1.5);
+      cursor: pointer; }
+    div.carousel .carousel-inner .carousel-item .img_fishhunter {
+      height: 600px;
+      margin-bottom: 110px; }
+    div.carousel .carousel-inner .carousel-item .img_rapalashad {
+      margin-bottom: 110px; }
+    div.carousel .carousel-inner .carousel-item .img_cañacocodrilofibra {
+      height: 200px; }
+    div.carousel .carousel-inner .carousel-item .img_cañadaiwalaguna {
+      height: 600px; }
+    div.carousel .carousel-inner .carousel-item .img_cañafly {
+      height: 400px; }
+  div.carousel .boton_carrusel {
+    opacity: 0.3 !important; }
 
-.boton_carrusel {
-    opacity: 0.3 !important;
-}
-
-.carousel-item img{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: row; 
-    object-fit: contain;
-    width: 100%;
-    height: 300px;        
-}
-
-.zoom {
-    transition: transform .2s; 
-}
- 
-.zoom:hover {
-    transform: scale(1.5); 
-    cursor: pointer;
-}
-
-.carousel-item .img_fishhunter {
-    height: 600px;
-    margin-bottom: 110px;
-}
-
-.carousel-item .img_rapalashad {
-    margin-bottom: 110px;
-}
-
-.carousel-item .img_cañacocodrilofibra {
-    height: 200px;
-}
-
-.carousel-item .img_cañadaiwalaguna {
-    height: 600px;
-}
-
-.carousel-item .img_cañafly {
-    height: 400px;
-}
-
-/*FIN CARRUSELES INDEX*/
-
-/*PROVEEDORES*/
-
-.index_grid_prov {
-    background-color: rgb(149, 179, 205);
-}
-
-.cont_prov {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px !important;
-    width: 100%;
-}
-
-.row-cols-md-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
-
-.col_prov{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 20px !important;
-}
-
-.mapa_prov {
-    width: 100%;
-    height: 100%;
-}
-
-/*FIN PROVEEDORES*/
-
-
-/*PRODUCTOS PROVISIONAL SIN BOOTSTRAP*/
-/*GRIDS*/
-body main article {  /*Borde de los article*/
+body .index_grid {
+  display: grid;
+  grid-template-rows: 50px repeat(3, 1fr) 50px repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "titulo titulo titulo" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "tituloc tituloc tituloc" "itemc1 itemc2 itemc3" "itemc4 itemc5 itemc6" "itemc7 itemc8 itemc9";
+  width: 100%;
+  height: 1200px;
+  background-color: #1d668d;
+  /*Seccion señuelos*/
+  /*Seccion Cañas*/ }
+  body .index_grid article {
+    /*Borde de los article*/
     margin-top: 1%;
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 1%;
-    border: 1px solid rgb(12, 138, 211);
-}
-
-/*Seccion señuelos*/
-
-.item {
+    border: 1px solid #0f364c; }
+  body .index_grid .item {
     grid-area: titulo;
     object-fit: contain;
     text-align: center;
-    color: rgb(12, 130, 209);
-    height: 40px;
-}
-
-.item1 {
+    color: #0f364c;
+    height: 40px; }
+  body .index_grid .item1 {
     grid-area: item1;
     background-image: url(../imagenes_prod/senuelos/rapala_dt1_fat01png.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item2 {
+    background-repeat: no-repeat; }
+  body .index_grid .item2 {
     grid-area: item2;
     background-image: url(../imagenes_prod/senuelos/fishunterpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item3 {
+    background-repeat: no-repeat; }
+  body .index_grid .item3 {
     grid-area: item3;
     background-image: url(../imagenes_prod/senuelos/articuladopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item4 {
+    background-repeat: no-repeat; }
+  body .index_grid .item4 {
     grid-area: item4;
     background-image: url(../imagenes_prod/senuelos/articuladopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item5 {
+    background-repeat: no-repeat; }
+  body .index_grid .item5 {
     grid-area: item5;
     background-image: url(../imagenes_prod/senuelos/raton_antienganchepng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item6 {
+    background-repeat: no-repeat; }
+  body .index_grid .item6 {
     grid-area: item6;
     background-image: url(../imagenes_prod/senuelos/spinnerpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item7 {
+    background-repeat: no-repeat; }
+  body .index_grid .item7 {
     grid-area: item7;
     background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item8 {
+    background-repeat: no-repeat; }
+  body .index_grid .item8 {
     grid-area: item8;
     background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.item9 {
+    background-repeat: no-repeat; }
+  body .index_grid .item9 {
     grid-area: item9;
     background-image: url(../imagenes_prod/senuelos/sapozilla_naranjapng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-/*Seccion Cañas*/
-.tituloc {
+    background-repeat: no-repeat; }
+  body .index_grid .tituloc {
     grid-area: tituloc;
     object-fit: contain;
     text-align: center;
-    color: rgb(12, 130, 209);
-    height: 40px;
-}
-
-.itemc1 {
+    color: #0f364c;
+    height: 40px; }
+  body .index_grid .itemc1 {
     grid-area: itemc1;
     background-image: url(../imagenes_prod/canias/cana_crocodile_fibradevidrio_180png.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc2 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc2 {
     grid-area: itemc2;
     background-image: url(../imagenes_prod/canias/cana_daiwa_laguna_boatpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc3 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc3 {
     grid-area: itemc3;
     background-image: url(../imagenes_prod/canias/caña_pesca_flypng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc4 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc4 {
     grid-area: itemc4;
     background-image: url(../imagenes_prod/canias/caña_pesca_flypng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc5 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc5 {
     grid-area: itemc5;
     background-image: url(../imagenes_prod/canias/caña_spinning_señuelopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc6 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc6 {
     grid-area: itemc6;
     background-image: url(../imagenes_prod/canias/caña_spinning_señuelopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc7 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc7 {
     grid-area: itemc7;
     background-image: url(../imagenes_prod/senuelos/spinnerpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc8 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc8 {
     grid-area: itemc8;
     background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.itemc9 {
+    background-repeat: no-repeat; }
+  body .index_grid .itemc9 {
     grid-area: itemc9;
     background-image: url(../imagenes_prod/senuelos/sapozilla_naranjapng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat; }
 
-.index_grid {
-    display: grid;
-    grid-template-rows: 50px repeat(3, 1fr) 50px repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "item1 item2 item3"
-    "item4 item5 item6"
-    "item7 item8 item9"
-    "tituloc tituloc tituloc"
-    "itemc1 itemc2 itemc3"
-    "itemc4 itemc5 itemc6"
-    "itemc7 itemc8 itemc9";
+.index_grid_prov {
+  background-color: #1d668d; }
+  .index_grid_prov .cont_prov {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px !important;
     width: 100%;
-    height: 1200px;
-}
-/*FIN PRODUCTOS*/
+    background-color: #1d668d; }
+    .index_grid_prov .cont_prov .row-cols-md-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      background-color: #1d668d; }
+    .index_grid_prov .cont_prov div.row_prov {
+      background-color: #1d668d; }
+      .index_grid_prov .cont_prov div.row_prov .col_prov {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 20px !important;
+        background-color: #1d668d; }
+        .index_grid_prov .cont_prov div.row_prov .col_prov .mapa_prov {
+          width: 100%;
+          height: 100%; }
+        .index_grid_prov .cont_prov div.row_prov .col_prov .boton_prov {
+          box-shadow: 0 0 5px rgba(4, 8, 27, 0.797) !important;
+          background-color: #1d668d !important;
+          color: white !important; }
+        .index_grid_prov .cont_prov div.row_prov .col_prov .boton_prov:hover {
+          transform: scale(0.9) !important;
+          background-color: #2770af !important; }
 
-
-/*FOOTER*/
-
-footer { /*Fondo del footer*/
-    background-image: linear-gradient(to bottom, rgba(17, 69, 166, 0.926), rgba(1, 18, 48, 0.926)); /* Aplique gradiente al footer */
-}
-
-.titulofootletras { /*Titulo del footer*/
-    color: aliceblue;
-}
-
-/*Grid general del footer*/
-.titulofoot {
-    grid-area: titulofoot;
-    object-fit: contain;
-    text-align: center;
-}
-
-.ubicacionfoot {
-    grid-area: ubicacionfoot;
-    object-fit: contain;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
-    color: aliceblue;
-}
+footer {
+  /*Fondo del footer*/
+  background-image: linear-gradient(to bottom, #0f364c, #0c2635);
+  /* Aplique gradiente al footer */ }
 
 .footer_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40px 85%;
-    grid-template-areas: 
-    "titulofoot titulofoot titulofoot"
-    "contactofoot redesfoot ubicacionfoot";
-    width: 100%;
-    height: 210px;
-}
-/*Fin grid general del footer*/
-
-/*Contactos footer*/
-.contacto_foot-titulo {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 10%;
-    grid-area: contacto_titulo;
-}
-.logos_contactos1{
-    grid-area: logos_contactos1;
-}
-
-.logos_contactos2{
-    grid-area: logos_contactos2;
-}
-
-.contactofoot {
+  /*Grid general del footer*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "titulofoot titulofoot titulofoot" "contactofoot redesfoot ubicacionfoot";
+  min-width: 100%;
+  height: 100%; }
+  .footer_grid .titulofoot {
+    /*Contenedor titulo del footer*/
+    grid-area: titulofoot;
+    object-fit: contain;
+    text-align: center; }
+    .footer_grid .titulofoot .titulofootletras {
+      /*Titulo del footer*/
+      color: #4081a7; }
+  .footer_grid .contactofoot {
+    /*Como contactarnos en el footer*/
     grid-area: contactofoot;
     object-fit: contain;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
-    color: aliceblue;
-    list-style:none;
+    list-style: none;
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40% 60%;
-    grid-template-areas: 
-    "... contacto_titulo contacto_titulo ..."
-    "... logos_contactos1 logos_contactos2 ...";
+    grid-template-areas: "... contacto_titulo contacto_titulo ..." "... logos_contactos1 logos_contactos2 ...";
     justify-content: center;
-    align-items: center; 
-}
-
-.imagenes_footer-contacto {
-    margin-bottom: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 50px;
-    height: 50px;
-}
-/*Fin contactos*/
-
-/*Redes del footer*/
-.logos_redes1{
-    grid-area: logos_redes1;
-}
-
-.logos_redes2{
-    grid-area: logos_redes2;
-}
-
-.videoyt {
-    grid-area: videoyt;
-    width: 100%;
-    height: 70px;
-    margin-left: 8px;
-}
-
-.redesfoot {
+    align-items: center; }
+    .footer_grid .contactofoot .contacto_foot-titulo {
+      /*Titulo de seccion contacto*/
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: 10%;
+      color: #4081a7;
+      grid-area: contacto_titulo; }
+    .footer_grid .contactofoot .logos_contactos1 {
+      grid-area: logos_contactos1; }
+    .footer_grid .contactofoot .logos_contactos2 {
+      grid-area: logos_contactos2; }
+    .footer_grid .contactofoot .imagenes_footer-contacto {
+      margin-bottom: 30px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 50px;
+      height: 50px; }
+  .footer_grid .redesfoot {
+    /*Nuestras redes en el footer*/
     grid-area: redesfoot;
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 40% 60%;
-    grid-template-areas: 
-    "... logos_redes1 logos_redes1 logos_redes2 logos_redes2 ..."
-    "... ... videoyt videoyt ... ...";
+    grid-template-areas: "... logos_redes1 logos_redes1 logos_redes2 logos_redes2 ..." "... videoyt videoyt videoyt videoyt ...";
     text-align: center;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.72); }
+    .footer_grid .redesfoot .logos_redes1 {
+      grid-area: logos_redes1; }
+    .footer_grid .redesfoot .logos_redes2 {
+      grid-area: logos_redes2; }
+    .footer_grid .redesfoot .videoyt {
+      grid-area: videoyt;
+      width: 90%;
+      height: 80%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 10%; }
+    .footer_grid .redesfoot .imagenes_footer-redes {
+      margin-top: 5px;
+      margin-bottom: 0px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 50px;
+      height: 50px; }
+  .footer_grid .ubicacionfoot {
+    /*Ubicacion donde nos encontramos*/
+    grid-area: ubicacionfoot;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
     color: aliceblue;
-}
-
-.imagenes_footer-redes {
-    margin-top: 5px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 50px;
-    height: 50px;
-}
-/*Fin redes*/
-
-/*Donde nos encontramos*/
-.titulomapainfofoot {
-    margin-top: 1%;
-    margin-bottom: 2%;
-    color: aliceblue;
-}
-
-.mapainfofoot {
-    width: 50%;
-    height: 60%;
-}
-/*Fin donde nos encontramos*/
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "titulomapa" "mapainfoot"; }
+    .footer_grid .ubicacionfoot .titulomapainfofoot {
+      grid-area: titulomapa;
+      margin-top: 1%;
+      margin-bottom: 2%;
+      color: #4081a7; }
+    .footer_grid .ubicacionfoot .mapainfofoot {
+      grid-area: mapainfoot;
+      width: 80%;
+      height: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 10%; }
 
 /* Querys del footer */
 @media screen and (max-width: 768px) {
-
-    .contactofoottitulo {
-        margin-top: 40%;
-    }
-
-    .mapainfofoot {
-        width: 70%;
-        height: 60%;
-    }
-
-    .videoyt {
-        width: 80%;
-        height: 50%;
-    }
-
-    .imagenes_footer {
-        width: 20px;
-        height: 20px;
-    }
-
-    .redesfoot {
-        grid-area: redesfoot;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 40% 60%;
-        grid-template-areas: 
-        "... logos_redes1 logos_redes1 logos_redes2 logos_redes2 ..."
-        "... videoyt videoyt videoyt videoyt ...";
-        text-align: center;
-        justify-content: center;
-        align-items: center; 
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
-        color: aliceblue;
-    }
-}
-
-/*FIN FOOTER*/
+  .footer_grid .contactofoot {
+    /*Como contactarnos en el footer*/
+    grid-area: contactofoot;
+    object-fit: contain;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.72);
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 35% 35%;
+    grid-template-areas: "contacto_titulo contacto_titulo contacto_titulo" "... logos_contactos1 ..." "... logos_contactos2 ...";
+    justify-content: center;
+    align-items: center; }
+    .footer_grid .contactofoot .contacto_foot-titulo {
+      /*Titulo de seccion contacto*/
+      margin-top: 20%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: 10%;
+      color: #4081a7;
+      grid-area: contacto_titulo; }
+    .footer_grid .contactofoot .logos_contactos1 {
+      grid-area: logos_contactos1; }
+    .footer_grid .contactofoot .logos_contactos2 {
+      grid-area: logos_contactos2; }
+    .footer_grid .contactofoot .imagenes_footer-contacto {
+      width: 40px !important;
+      height: 40px !important; }
+  .footer_grid .redesfoot {
+    grid-area: redesfoot;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 30% 40%;
+    grid-template-areas: "... logos_redes1 ..." "... logos_redes2 ..." "videoyt videoyt videoyt";
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.72); }
+    .footer_grid .redesfoot .imagenes_footer-redes {
+      width: 40px;
+      height: 40px; }
+    .footer_grid .redesfoot .videoyt {
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 5%;
+      width: 70%;
+      height: 90%; } }

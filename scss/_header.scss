@@ -1,0 +1,66 @@
+div.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: $full;
+}
+header{
+    div{
+        .row {
+            background-color: $colorheader;
+            min-width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .row_header {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+                .logo-pag { /*Logo redondo de la pagina*/
+                    background-image: url(../imagenes_pagina/LogoPescandoUruguayConLetras.png);
+                    margin-left: 1%;
+                    margin-top: 0px;
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    background-size: contain;
+                    z-index: 1;
+                }
+                .search_css {
+                    background-color: rgba(232, 232, 232, 0.437) !important;
+                }
+                
+                .btn {
+                    box-shadow: 0 0 5px rgba(4, 8, 27, 0.797) !important;
+                    color: rgb(255, 255, 255) !important;
+                    border: none !important;
+                }
+                
+                .boton-nav { /*Botones del menu nav*/
+                    margin-left: 20px;
+                    box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+                    color: white !important;
+                }
+                
+                .boton-nav:hover {
+                    transform: scale(0.9);
+                    background-color: rgb(25, 123, 209);
+                }
+                
+                .btn:hover {
+                    transform: scale(0.9);
+                    background-color: rgb(25, 123, 209) !important;
+                }
+                div ul.nav-css {
+                    margin-right: 20px !important;
+                }  
+        }
+    }
+}
+.show {
+    z-index: 1;
+}
+
+@media screen and (min-width: 992px) {
+    header div.row_header div ul.nav-css {
+        margin-right: auto !important;
+    }  
+}
