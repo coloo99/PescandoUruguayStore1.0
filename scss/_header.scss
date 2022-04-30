@@ -27,7 +27,7 @@ header{
                 .search_css {
                     background-color: rgba(232, 232, 232, 0.437) !important;
                 }
-                
+
                 .btn {
                     box-shadow: 0 0 5px rgba(4, 8, 27, 0.797) !important;
                     color: rgb(255, 255, 255) !important;
@@ -53,8 +53,13 @@ header{
                     margin-right: 20px !important;
                 }  
         }
+        ul li a img.img-login{
+            width: 27px !important; 
+            height: 27px !important;
+        }
     }
 }
+
 .show {
     z-index: 1;
 }
