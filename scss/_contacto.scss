@@ -27,6 +27,9 @@
     justify-items: center;
     align-items: center;
 }
+.radio{
+    box-shadow: map-get($sombras, sombrabtnheader);
+}
 
 .titulo-form{
     grid-area: titulo-form;
@@ -36,6 +39,7 @@
     margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    color: $colorfooter;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -101,6 +105,7 @@
     margin-bottom: 0px;
     margin-left: 5%;
     margin-right: 5%;
+    color: $colorfooter;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -148,6 +153,8 @@
 }
 .check-name_prod{
     grid-area: check-name_prod;
+    font-weight: bold;
+    color: $colorfooter;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -155,6 +162,8 @@
 }
 .check-name_dist{
     grid-area: check-name_dist;
+    font-weight: bold;
+    color: $colorfooter;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -162,6 +171,8 @@
 }
 .check-name_prov{
     grid-area: check-name_prov;
+    font-weight: bold;
+    color: $colorfooter;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -203,8 +214,20 @@
 }
 .btn-submit{
     grid-area: btn-submit;
+    box-shadow: map-get($sombras, sombrabtnheader);
+    color: map-get($colorbtn, colorletrabtn) !important;
+}
+.btn-submit:hover{
+    transform: scale(0.9);
+    background-color: map-get($colorbtn, colorbtnhover) !important;
 }
 .btn-reset{
     grid-area: btn-reset;
+    box-shadow: map-get($sombras, sombrabtnheader);
+    color: map-get($colorbtn, colorletrabtn) !important;
+}
+.btn-reset:hover{
+    transform: scale(0.9);
+    background-color: map-get($colorbtn, colorbtnhover) !important;
 }
 

@@ -25,33 +25,50 @@ header{
                     z-index: 1;
                 }
                 .search_css {
-                    background-color: rgba(232, 232, 232, 0.437) !important;
+                    background-color: map-get($colorbtn, colorsearch) !important;
                 }
 
                 .btn {
-                    box-shadow: 0 0 5px rgba(4, 8, 27, 0.797) !important;
-                    color: rgb(255, 255, 255) !important;
+                    box-shadow: map-get($sombras, sombrabtnheader) !important;
+                    color: map-get($colorbtn, colorletrabtn) !important;
                     border: none !important;
                 }
                 
                 .boton-nav { /*Botones del menu nav*/
                     margin-left: 20px;
-                    box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
-                    color: white !important;
+                    box-shadow: map-get($sombras, sombrabtnheader);
+                    color: map-get($colorbtn, colorletrabtn) !important;
                 }
                 
-                .boton-nav:hover {
+                .boton-nav:hover {  
                     transform: scale(0.9);
-                    background-color: rgb(25, 123, 209);
+                    background-color: map-get($colorbtn, colorbtnhover);
                 }
                 
                 .btn:hover {
                     transform: scale(0.9);
-                    background-color: rgb(25, 123, 209) !important;
+                    background-color: map-get($colorbtn, colorbtnhover) !important;
                 }
                 div ul.nav-css {
                     margin-right: 20px !important;
-                }  
+                }
+                 ul.btn-login{
+                    width: 60px !important;
+                    height: 60px !important;
+                    display: flex;
+                    justify-content: center;
+                    justify-items: center;
+                    align-items: center;
+                    margin-left: 45%;
+                }
+                 ul li.btn-login{
+                    display: flex;
+                    justify-content: center;
+                    justify-items: center;
+                    align-items: center;
+                    width: 60px !important;
+                    height: 60px !important;
+                }
         }
         ul li a img.img-login{
             width: 27px !important; 
@@ -67,5 +84,8 @@ header{
 @media screen and (min-width: 992px) {
     header div.row_header div ul.nav-css {
         margin-right: auto !important;
-    }  
+    }
+    dl, ol, ul.btn-login{
+        margin-left: 0px !important;
+    }
 }

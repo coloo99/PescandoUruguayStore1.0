@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /*Variables para aplicar en los estilos*/
+/*Aplicando sombras con map al footer y los botones del nav*/
+/*aplicando extend a imagenes del footer*/
+.footer_grid .contactofoot .imagenes_footer-contacto, .footer_grid .redesfoot .imagenes_footer-redes {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px; }
+
+/*Aplicando mixins*/
 * {
   padding: 0;
   margin: 0; }
@@ -47,6 +56,21 @@ header div .row_header {
     background-color: #197bd1 !important; }
   header div .row_header div ul.nav-css {
     margin-right: 20px !important; }
+  header div .row_header ul.btn-login {
+    width: 60px !important;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 45%; }
+  header div .row_header ul li.btn-login {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 60px !important;
+    height: 60px !important; }
 
 header div ul li a img.img-login {
   width: 27px !important;
@@ -57,7 +81,9 @@ header div ul li a img.img-login {
 
 @media screen and (min-width: 992px) {
   header div.row_header div ul.nav-css {
-    margin-right: auto !important; } }
+    margin-right: auto !important; }
+  dl, ol, ul.btn-login {
+    margin-left: 0px !important; } }
 
 .index-grid {
   display: flex;
@@ -324,6 +350,9 @@ body .index_grid {
   justify-items: center;
   align-items: center; }
 
+.radio {
+  box-shadow: 0 0 5px rgba(4, 8, 27, 0.797); }
+
 .titulo-form {
   grid-area: titulo-form;
   width: 90%;
@@ -332,6 +361,7 @@ body .index_grid {
   margin-bottom: 2%;
   margin-left: 5%;
   margin-right: 5%;
+  color: #0f364c;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -397,6 +427,7 @@ body .index_grid {
   margin-bottom: 0px;
   margin-left: 5%;
   margin-right: 5%;
+  color: #0f364c;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -441,6 +472,8 @@ body .index_grid {
 
 .check-name_prod {
   grid-area: check-name_prod;
+  font-weight: bold;
+  color: #0f364c;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -448,6 +481,8 @@ body .index_grid {
 
 .check-name_dist {
   grid-area: check-name_dist;
+  font-weight: bold;
+  color: #0f364c;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -455,6 +490,8 @@ body .index_grid {
 
 .check-name_prov {
   grid-area: check-name_prov;
+  font-weight: bold;
+  color: #0f364c;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -492,10 +529,22 @@ body .index_grid {
   grid-template-areas: "btn-submit btn-reset"; }
 
 .btn-submit {
-  grid-area: btn-submit; }
+  grid-area: btn-submit;
+  box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+  color: white !important; }
+
+.btn-submit:hover {
+  transform: scale(0.9);
+  background-color: #197bd1 !important; }
 
 .btn-reset {
-  grid-area: btn-reset; }
+  grid-area: btn-reset;
+  box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+  color: white !important; }
+
+.btn-reset:hover {
+  transform: scale(0.9);
+  background-color: #197bd1 !important; }
 
 footer {
   /*Fondo del footer*/
@@ -514,7 +563,8 @@ footer {
     /*Contenedor titulo del footer*/
     grid-area: titulofoot;
     object-fit: contain;
-    text-align: center; }
+    text-align: center;
+    margin-top: 5px; }
     .footer_grid .titulofoot .titulofootletras {
       /*Titulo del footer*/
       color: #4081a7; }
@@ -545,11 +595,7 @@ footer {
     .footer_grid .contactofoot .logos_contactos2 {
       grid-area: logos_contactos2; }
     .footer_grid .contactofoot .imagenes_footer-contacto {
-      margin-bottom: 30px;
-      margin-left: 5px;
-      margin-right: 5px;
-      width: 50px;
-      height: 50px; }
+      margin-bottom: 30px; }
   .footer_grid .redesfoot {
     /*Nuestras redes en el footer*/
     grid-area: redesfoot;
@@ -576,11 +622,7 @@ footer {
       margin-bottom: 10%; }
     .footer_grid .redesfoot .imagenes_footer-redes {
       margin-top: 5px;
-      margin-bottom: 0px;
-      margin-left: 5px;
-      margin-right: 5px;
-      width: 50px;
-      height: 50px; }
+      margin-bottom: 0px; }
   .footer_grid .ubicacionfoot {
     /*Ubicacion donde nos encontramos*/
     grid-area: ubicacionfoot;
@@ -656,8 +698,8 @@ footer {
       width: 40px;
       height: 40px; }
     .footer_grid .redesfoot .videoyt {
+      width: 70%;
+      height: 90%;
       margin-left: 15%;
       margin-right: 15%;
-      margin-bottom: 5%;
-      width: 70%;
-      height: 90%; } }
+      margin-bottom: 5%; } }
