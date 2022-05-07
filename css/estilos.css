@@ -92,6 +92,10 @@ header div ul li a img.img-login {
   width: 100%; }
 
 /*CARRUSELES*/
+.titulocarrusel {
+  text-align: center;
+  color: #0f364c; }
+
 div.carousel {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -146,155 +150,216 @@ body .index_grid {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "titulo titulo titulo" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "tituloc tituloc tituloc" "itemc1 itemc2 itemc3" "itemc4 itemc5 itemc6" "itemc7 itemc8 itemc9";
   width: 100%;
-  height: 1200px;
+  height: 4500px;
   background-color: #1d668d;
   /*Seccion señuelos*/
   /*Seccion Cañas*/ }
-  body .index_grid article {
-    /*Borde de los article*/
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 1%;
+  body .index_grid img {
+    width: 90%;
+    height: 65%; }
+  body .index_grid div {
+    /*Borde de los div*/
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    width: 90% !important;
+    height: 96%;
     border: 1px solid #0f364c; }
+  body .index_grid div.card-body {
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  body .index_grid .zoom {
+    transition: transform 0.5s; }
+  body .index_grid .zoom:hover {
+    transform: scale(1.2);
+    cursor: pointer; }
   body .index_grid .item {
     grid-area: titulo;
     object-fit: contain;
     text-align: center;
     color: #0f364c;
-    height: 40px; }
+    height: 100%;
+    width: 100%;
+    border: 1px solid #0f364c;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%; }
   body .index_grid .item1 {
     grid-area: item1;
-    background-image: url(../imagenes_prod/senuelos/rapala_dt1_fat01png.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item2 {
     grid-area: item2;
-    background-image: url(../imagenes_prod/senuelos/fishunterpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item3 {
     grid-area: item3;
-    background-image: url(../imagenes_prod/senuelos/articuladopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item4 {
     grid-area: item4;
-    background-image: url(../imagenes_prod/senuelos/articuladopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item5 {
     grid-area: item5;
-    background-image: url(../imagenes_prod/senuelos/raton_antienganchepng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item6 {
     grid-area: item6;
-    background-image: url(../imagenes_prod/senuelos/spinnerpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item7 {
     grid-area: item7;
-    background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item8 {
     grid-area: item8;
-    background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .item9 {
     grid-area: item9;
-    background-image: url(../imagenes_prod/senuelos/sapozilla_naranjapng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
-  body .index_grid .tituloc {
+    background-repeat: no-repeat;
+    width: 50%; }
+  body .index_grid .card-body {
+    grid-area: btn-login;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "card-title card-title" "btn-comp btn-fav"; }
+    body .index_grid .card-body .btn {
+      box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+      color: white !important;
+      background-color: #308faf;
+      border-style: none;
+      margin-left: 3%;
+      margin-right: 3%; }
+    body .index_grid .card-body .btn:hover {
+      transform: scale(0.9);
+      background-color: #44a6c7; }
+    body .index_grid .card-body .card-title {
+      grid-area: card-title;
+      color: #0f364c;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 10%; }
+    body .index_grid .card-body .btn-fav {
+      grid-area: btn-fav;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      height: 80%;
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%; }
+    body .index_grid .card-body .btn-comp {
+      grid-area: btn-comp;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      height: 80%; }
+  body .index_grid .itemc {
     grid-area: tituloc;
     object-fit: contain;
     text-align: center;
     color: #0f364c;
-    height: 40px; }
+    height: 40px;
+    border: 1px solid #0f364c;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%; }
   body .index_grid .itemc1 {
     grid-area: itemc1;
-    background-image: url(../imagenes_prod/canias/cana_crocodile_fibradevidrio_180png.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc2 {
     grid-area: itemc2;
-    background-image: url(../imagenes_prod/canias/cana_daiwa_laguna_boatpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc3 {
     grid-area: itemc3;
-    background-image: url(../imagenes_prod/canias/caña_pesca_flypng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc4 {
     grid-area: itemc4;
-    background-image: url(../imagenes_prod/canias/caña_pesca_flypng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc5 {
     grid-area: itemc5;
-    background-image: url(../imagenes_prod/canias/caña_spinning_señuelopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc6 {
     grid-area: itemc6;
-    background-image: url(../imagenes_prod/canias/caña_spinning_señuelopng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc7 {
     grid-area: itemc7;
-    background-image: url(../imagenes_prod/senuelos/spinnerpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc8 {
     grid-area: itemc8;
-    background-image: url(../imagenes_prod/senuelos/strom_deep_magpng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
   body .index_grid .itemc9 {
     grid-area: itemc9;
-    background-image: url(../imagenes_prod/senuelos/sapozilla_naranjapng.png);
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
+
+@media (max-width: 768px) {
+  body .index_grid {
+    display: grid;
+    grid-template-rows: 50px repeat(5, 1fr) 50px repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titulo titulo" "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item9" "tituloc tituloc" "itemc1 itemc2" "itemc3 itemc4" "itemc5 itemc6"  "itemc7 itemc8" "itemc9 itemc9";
+    width: 100%;
+    height: 4000px;
+    background-color: #1d668d; } }
 
 .index_grid_prov {
   background-color: #1d668d; }
@@ -335,7 +400,7 @@ body .index_grid {
   background-color: #1d668d; }
 
 .form-control {
-  background-color: #2ba0c8 !important;
+  background-color: rgba(232, 232, 232, 0.437) !important;
   opacity: 0.7; }
 
 ::placeholder {
@@ -545,6 +610,140 @@ body .index_grid {
 .btn-reset:hover {
   transform: scale(0.9);
   background-color: #197bd1 !important; }
+
+.login-form {
+  display: grid;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #1d668d;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "... titulo-login ..." "... imp-user ..." "... imp-pass ..." "... btn-login ..." "... regist-log ..."; }
+  .login-form .titulo-login {
+    grid-area: titulo-login;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    .login-form .titulo-login h2 {
+      color: #0f364c; }
+  .login-form .imp-user {
+    grid-area: imp-user;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    .login-form .imp-user .imp-log {
+      background-color: rgba(232, 232, 232, 0.437);
+      width: 50%; }
+  .login-form .imp-pass {
+    grid-area: imp-pass;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    .login-form .imp-pass .imp-log {
+      background-color: rgba(232, 232, 232, 0.437);
+      width: 50%; }
+  .login-form .btn-login {
+    grid-area: btn-login;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    .login-form .btn-login .btn {
+      box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+      color: white !important;
+      background-color: #308faf;
+      border-style: none;
+      margin-left: 2%;
+      margin-right: 2%; }
+    .login-form .btn-login .btn:hover {
+      transform: scale(0.9);
+      background-color: #44a6c7; }
+  .login-form .regist-log {
+    grid-area: regist-log;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white; }
+
+.reg-form {
+  display: grid;
+  background-color: #1d668d;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "... titulo-reg ..." "... uno-reg ..." "... dos-reg ..." "... tres-reg ..." "... cuatro-reg ..." "... btn-reg ..." "... reg-log ..."; }
+  .reg-form .titulo-reg {
+    grid-area: titulo-reg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%; }
+    .reg-form .titulo-reg h2 {
+      color: #0f364c; }
+  .reg-form .uno-reg {
+    grid-area: uno-reg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%; }
+  .reg-form .dos-reg {
+    grid-area: dos-reg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%; }
+  .reg-form .tres-reg {
+    grid-area: tres-reg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%; }
+  .reg-form .cuatro-reg {
+    grid-area: cuatro-reg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%; }
+  .reg-form .reg-log {
+    grid-area: reg-log;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white; }
+  .reg-form .btn-reg {
+    /*Estilos del boton registrarme*/
+    grid-area: btn-reg;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
+    .reg-form .btn-reg .btn {
+      box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+      color: white !important;
+      background-color: #308faf;
+      border-style: none;
+      margin-left: 2%;
+      margin-right: 2%; }
+    .reg-form .btn-reg .btn:hover {
+      transform: scale(0.9);
+      background-color: #44a6c7; }
+  .reg-form .imp-reg {
+    /*Estilos de los campos imput*/
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%; }
 
 footer {
   /*Fondo del footer*/

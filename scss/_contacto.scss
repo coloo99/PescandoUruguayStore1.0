@@ -3,7 +3,7 @@
 }
 
 .form-control {
-    background-color: $colorheader !important;
+    background-color: map-get($colorbtn, colorsearch) !important;
     opacity: 0.7;
 }
 
