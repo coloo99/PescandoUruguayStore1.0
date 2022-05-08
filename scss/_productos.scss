@@ -1,7 +1,8 @@
 body{
     .index_grid {
         display: grid;
-        grid-template-rows: 50px repeat(3, 1fr) 50px repeat(3, 1fr);
+        /*grid-template-rows: 50px repeat(3, 1fr) 50px repeat(3, 1fr);*/
+        grid-template-rows: 2% 16% 16% 16% 2% 16% 16% 16%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
         "titulo titulo titulo"
@@ -16,8 +17,11 @@ body{
         height: 4500px;
         background-color: $colorbody;
             img{
-                width: 90%;
-                height: 65%;
+                width: 70%;
+                height: 55%;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 10%;
             }
             div {  /*Borde de los div*/
                 margin-top: 2%;
@@ -47,9 +51,9 @@ body{
                 object-fit: contain;
                 text-align: center;
                 color: $colorfooter;
-                height: 100%;
-                width: 100%;
-                border: 1px solid $colorfooter;
+                height: 70%;
+                width: 98%;
+                border: 2px solid $colorfooter;
                 margin-top: 1%;
                 margin-left: 1%;
                 margin-right: 1%;
@@ -175,8 +179,8 @@ body{
                 object-fit: contain;
                 text-align: center;
                 color: $colorfooter;
-                height: 40px;
-                border: 1px solid $colorfooter;
+                height: 70%;
+                border: 2px solid $colorfooter;
                 margin-top: 1%;
                 margin-left: 1%;
                 margin-right: 1%;
@@ -270,6 +274,20 @@ body{
             width: $full;
             height: 4000px;
             background-color: $colorbody;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    body{
+        .index_grid {
+            height: 2700px;
+                .card-body .btn-fav{
+                    height: 80%;
+                    width: 50%;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                }
         }
     }
 }
