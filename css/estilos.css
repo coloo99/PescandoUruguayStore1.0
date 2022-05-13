@@ -411,218 +411,195 @@ body .index_grid {
 
 .main_contacto {
   background-color: #1d668d; }
-
-.form-control {
-  background-color: rgba(232, 232, 232, 0.437) !important;
-  opacity: 0.7; }
-
-::placeholder {
-  color: white !important; }
-
-.cont-form {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr), 30px, 30px, 100px, 40px;
-  grid-template-areas: "... titulo-form titulo-form ..." "... imp-name imp-apellido ..." "... imp-email imp-tel ..." "... titulo-cons titulo-cons ..." "... check check ..." "... imp-cons imp-cons ..." "... botones-form botones-form ...";
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.radio {
-  box-shadow: 0 0 5px rgba(4, 8, 27, 0.797); }
-
-.titulo-form {
-  grid-area: titulo-form;
-  width: 90%;
-  height: 93%;
-  margin-top: 5%;
-  margin-bottom: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
-  color: #0f364c;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.imp-name {
-  grid-area: imp-name;
-  width: 90%;
-  height: 90%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.imp-apellido {
-  grid-area: imp-apellido;
-  width: 90%;
-  height: 90%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.imp-email {
-  grid-area: imp-email;
-  width: 90%;
-  height: 90%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.imp-tel {
-  grid-area: imp-tel;
-  width: 90%;
-  height: 90%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.titulo-cons {
-  grid-area: titulo-cons;
-  width: 90%;
-  height: 95%;
-  margin-top: 5%;
-  margin-bottom: 0px;
-  margin-left: 5%;
-  margin-right: 5%;
-  color: #0f364c;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.check {
-  grid-area: check;
-  width: 90%;
-  height: 98%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20px,10px;
-  grid-template-areas: "check-name_prod check-name_dist check-name_prov" "prod-rad dis-rad prov-rad"; }
-
-.prod-rad {
-  grid-area: prod-rad;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin-left: 45%; }
-
-.dis-rad {
-  grid-area: dis-rad;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin-left: 45%; }
-
-.prov-rad {
-  grid-area: prov-rad;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin-left: 45%; }
-
-.check-name_prod {
-  grid-area: check-name_prod;
-  font-weight: bold;
-  color: #0f364c;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.check-name_dist {
-  grid-area: check-name_dist;
-  font-weight: bold;
-  color: #0f364c;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.check-name_prov {
-  grid-area: check-name_prov;
-  font-weight: bold;
-  color: #0f364c;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin-right: 5px;
-  margin-left: 5px; }
-
-.imp-cons {
-  grid-area: imp-cons;
-  width: 90%;
-  height: 96%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.botones-form {
-  grid-area: botones-form;
-  width: 90%;
-  height: 94%;
-  margin-top: 1%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100%;
-  grid-template-areas: "btn-submit btn-reset"; }
-
-.btn-submit {
-  grid-area: btn-submit;
-  box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
-  color: white !important; }
-
-.btn-submit:hover {
-  transform: scale(0.9);
-  background-color: #197bd1 !important; }
-
-.btn-reset {
-  grid-area: btn-reset;
-  box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
-  color: white !important; }
-
-.btn-reset:hover {
-  transform: scale(0.9);
-  background-color: #197bd1 !important; }
+  .main_contacto .cont-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr), 30px, 30px, 100px, 40px;
+    grid-template-areas: "... titulo-form titulo-form ..." "... imp-name imp-apellido ..." "... imp-email imp-tel ..." "... titulo-cons titulo-cons ..." "... check check ..." "... imp-cons imp-cons ..." "... botones-form botones-form ...";
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    .main_contacto .cont-form .titulo-form {
+      grid-area: titulo-form;
+      width: 90%;
+      height: 93%;
+      margin-top: 5%;
+      margin-bottom: 2%;
+      margin-left: 5%;
+      margin-right: 5%;
+      color: #0f364c;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+    .main_contacto .cont-form .imp-name {
+      grid-area: imp-name;
+      width: 90%;
+      height: 90%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+    .main_contacto .cont-form .imp-apellido {
+      grid-area: imp-apellido;
+      width: 90%;
+      height: 90%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+    .main_contacto .cont-form .imp-email {
+      grid-area: imp-email;
+      width: 90%;
+      height: 90%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+    .main_contacto .cont-form .imp-tel {
+      grid-area: imp-tel;
+      width: 90%;
+      height: 90%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+    .main_contacto .cont-form .titulo-cons {
+      grid-area: titulo-cons;
+      width: 90%;
+      height: 95%;
+      margin-top: 5%;
+      margin-bottom: 0px;
+      margin-left: 5%;
+      margin-right: 5%;
+      color: #0f364c;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+    .main_contacto .cont-form .form-control {
+      background-color: rgba(232, 232, 232, 0.437) !important;
+      opacity: 0.7; }
+    .main_contacto .cont-form .check {
+      grid-area: check;
+      width: 90%;
+      height: 98%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 20px,10px;
+      grid-template-areas: "check-name_prod check-name_dist check-name_prov" "prod-rad dis-rad prov-rad"; }
+      .main_contacto .cont-form .check .check-name_prod {
+        grid-area: check-name_prod;
+        font-weight: bold;
+        color: #0f364c;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .check .prod-rad {
+        grid-area: prod-rad;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 45%; }
+      .main_contacto .cont-form .check .check-name_dist {
+        grid-area: check-name_dist;
+        font-weight: bold;
+        color: #0f364c;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .check .dis-rad {
+        grid-area: dis-rad;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 45%; }
+      .main_contacto .cont-form .check .check-name_prov {
+        grid-area: check-name_prov;
+        font-weight: bold;
+        color: #0f364c;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-right: 5px;
+        margin-left: 5px; }
+      .main_contacto .cont-form .check .prov-rad {
+        grid-area: prov-rad;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 45%; }
+      .main_contacto .cont-form .check .radio {
+        box-shadow: 0 0 5px rgba(4, 8, 27, 0.797); }
+    .main_contacto .cont-form .imp-cons {
+      grid-area: imp-cons;
+      width: 90%;
+      height: 96%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+    .main_contacto .cont-form .botones-form {
+      grid-area: botones-form;
+      width: 90%;
+      height: 94%;
+      margin-top: 1%;
+      margin-bottom: 5%;
+      margin-left: 5%;
+      margin-right: 5%;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 100%;
+      grid-template-areas: "btn-submit btn-reset"; }
+      .main_contacto .cont-form .botones-form .btn-submit {
+        grid-area: btn-submit;
+        box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+        color: white !important; }
+      .main_contacto .cont-form .botones-form .btn-submit:hover {
+        transform: scale(0.9);
+        background-color: #197bd1 !important; }
+      .main_contacto .cont-form .botones-form .btn-reset {
+        grid-area: btn-reset;
+        box-shadow: 0 0 5px rgba(4, 8, 27, 0.797);
+        color: white !important; }
+      .main_contacto .cont-form .botones-form .btn-reset:hover {
+        transform: scale(0.9);
+        background-color: #197bd1 !important; }
+    .main_contacto .cont-form ::placeholder {
+      color: white !important; }
 
 .login-form {
   display: grid;
