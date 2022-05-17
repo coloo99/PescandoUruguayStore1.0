@@ -19,7 +19,7 @@ div.container {
   max-width: 100%; }
 
 header div .row {
-  background-color: #2ba0c8;
+  background-color: #458dd6;
   min-width: 100%;
   padding-right: 0px;
   padding-left: 0px; }
@@ -88,13 +88,19 @@ header div ul li a img.img-login {
 .index-grid {
   display: flex;
   flex-direction: column;
-  background-color: #1d668d;
+  background-color: #5695d4af;
   width: 100%; }
 
 /*CARRUSELES*/
 .titulocarrusel {
   text-align: center;
-  color: #0f364c; }
+  color: #0b4c71;
+  background-color: #5695d4af;
+  border-radius: 10% 10%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px; }
 
 div.carousel {
   margin-bottom: 5px;
@@ -108,7 +114,7 @@ div.carousel {
   object-fit: contain;
   width: 98%;
   height: 300px;
-  border: 2px ridge #0d4a8c; }
+  border: 0.5px ridge #828384; }
   div.carousel .carousel-inner {
     display: flex;
     align-items: center;
@@ -128,7 +134,7 @@ div.carousel {
     div.carousel .carousel-inner .carousel-item .zoom {
       transition: transform .2s; }
     div.carousel .carousel-inner .carousel-item .zoom:hover {
-      transform: scale(1.5);
+      transform: scale(1.1);
       cursor: pointer; }
     div.carousel .carousel-inner .carousel-item .img_fishhunter {
       height: 600px;
@@ -152,7 +158,7 @@ body .index_grid {
   grid-template-areas: "titulo titulo titulo" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "tituloc tituloc tituloc" "itemc1 itemc2 itemc3" "itemc4 itemc5 itemc6" "itemc7 itemc8 itemc9";
   width: 100%;
   height: 4500px;
-  background-color: #1d668d;
+  background-color: #5695d4 f;
   /*Seccion señuelos*/
   /*Seccion Cañas*/ }
   body .index_grid img {
@@ -186,66 +192,76 @@ body .index_grid {
     text-align: center;
     color: #0f364c;
     height: 70%;
-    width: 98%;
-    border: 2px solid #0f364c;
+    width: 40%;
+    border: 2px solid #0b4c71;
     margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 1%; }
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+    background-color: #5290cebb; }
   body .index_grid .item1 {
     grid-area: item1;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item2 {
     grid-area: item2;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item3 {
     grid-area: item3;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item4 {
     grid-area: item4;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item5 {
     grid-area: item5;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item6 {
     grid-area: item6;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item7 {
     grid-area: item7;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item8 {
     grid-area: item8;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .item9 {
     grid-area: item9;
     object-fit: contain;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #5290cebb;
     width: 50%; }
   body .index_grid .card-body {
     grid-area: btn-login;
@@ -295,65 +311,76 @@ body .index_grid {
     text-align: center;
     color: #0f364c;
     height: 70%;
-    border: 2px solid #0f364c;
+    width: 40%;
+    border: 1px solid #0b4c71;
     margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 1%; }
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1%;
+    background-color: #5290cebb; }
   body .index_grid .itemc1 {
     grid-area: itemc1;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc2 {
     grid-area: itemc2;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc3 {
     grid-area: itemc3;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc4 {
     grid-area: itemc4;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc5 {
     grid-area: itemc5;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc6 {
     grid-area: itemc6;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc7 {
     grid-area: itemc7;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc8 {
     grid-area: itemc8;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
   body .index_grid .itemc9 {
     grid-area: itemc9;
     object-fit: contain;
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #5290cebb; }
 
 @media (max-width: 768px) {
   body .index_grid {
@@ -363,7 +390,7 @@ body .index_grid {
     grid-template-areas: "titulo titulo" "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item9" "tituloc tituloc" "itemc1 itemc2" "itemc3 itemc4" "itemc5 itemc6"  "itemc7 itemc8" "itemc9 itemc9";
     width: 100%;
     height: 4000px;
-    background-color: #1d668d; } }
+    background-color: #5695d4 f; } }
 
 @media (max-width: 1100px) {
   body .index_grid {
@@ -375,42 +402,42 @@ body .index_grid {
       margin-right: 25%; } }
 
 .index_grid_prov {
-  background-color: #1d668d; }
+  background-color: #5695d4 f !important; }
   .index_grid_prov .cont_prov {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px !important;
     width: 100%;
-    background-color: #1d668d; }
+    background-color: #5695d4 f !important; }
     .index_grid_prov .cont_prov .row-cols-md-2 {
       display: flex;
       align-items: center;
       justify-content: center;
       justify-items: center;
-      background-color: #1d668d; }
+      background-color: #5695d4 f !important; }
     .index_grid_prov .cont_prov div.row_prov {
-      background-color: #1d668d; }
+      background-color: #5695d4 f !important; }
       .index_grid_prov .cont_prov div.row_prov .col_prov {
         display: flex;
         align-items: center;
         justify-content: center;
         justify-items: center;
         margin-top: 20px !important;
-        background-color: #1d668d; }
+        background-color: #5695d4 f !important; }
         .index_grid_prov .cont_prov div.row_prov .col_prov .mapa_prov {
           width: 100%;
           height: 100%; }
         .index_grid_prov .cont_prov div.row_prov .col_prov .boton_prov {
           box-shadow: 0 0 5px rgba(4, 8, 27, 0.797) !important;
-          background-color: #1d668d !important;
+          background-color: #0f364c !important;
           color: white !important; }
         .index_grid_prov .cont_prov div.row_prov .col_prov .boton_prov:hover {
           transform: scale(0.9) !important;
-          background-color: #2770af !important; }
+          background-color: #1264ac !important; }
 
 .main_contacto {
-  background-color: #1d668d; }
+  background-color: #5695d4af; }
   .main_contacto .cont-form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -421,13 +448,15 @@ body .index_grid {
     align-items: center; }
     .main_contacto .cont-form .titulo-form {
       grid-area: titulo-form;
-      width: 90%;
-      height: 93%;
+      width: 80%;
+      height: 50%;
       margin-top: 5%;
       margin-bottom: 2%;
-      margin-left: 5%;
-      margin-right: 5%;
-      color: #0f364c;
+      margin-left: 10%;
+      margin-right: 10%;
+      background-color: #458dd6;
+      border-radius: 10% 10%;
+      color: #0b4c71;
       display: flex;
       justify-content: center;
       justify-items: center;
@@ -482,13 +511,15 @@ body .index_grid {
       align-items: center; }
     .main_contacto .cont-form .titulo-cons {
       grid-area: titulo-cons;
-      width: 90%;
-      height: 95%;
+      width: 60%;
+      height: 40%;
       margin-top: 5%;
-      margin-bottom: 0px;
-      margin-left: 5%;
-      margin-right: 5%;
-      color: #0f364c;
+      margin-bottom: 5%;
+      margin-left: 20%;
+      margin-right: 20%;
+      background-color: #458dd6;
+      border-radius: 10% 10%;
+      color: #0b4c71;
       display: flex;
       justify-content: center;
       justify-items: center;
@@ -601,11 +632,191 @@ body .index_grid {
     .main_contacto .cont-form ::placeholder {
       color: white !important; }
 
+@media screen and (max-width: 1200px) {
+  .main_contacto {
+    background-color: #5695d4af; }
+    .main_contacto .cont-form {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr), 30px, 30px, 100px, 40px;
+      grid-template-areas: "titulo-form titulo-form titulo-form titulo-form" "imp-name imp-name imp-apellido imp-apellido" "imp-email imp-email imp-tel imp-tel" "titulo-cons titulo-cons titulo-cons titulo-cons" "... check check ..." "imp-cons imp-cons imp-cons imp-cons" "... botones-form botones-form ...";
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+      .main_contacto .cont-form .titulo-form {
+        grid-area: titulo-form;
+        width: 60%;
+        height: 50%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: #458dd6;
+        border-radius: 10% 10%;
+        color: #0b4c71;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .titulo-cons {
+        grid-area: titulo-cons;
+        width: 60%;
+        height: 40%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: #458dd6;
+        border-radius: 10% 10%;
+        color: #0b4c71;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-name {
+        grid-area: imp-name;
+        width: 70%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 25%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-apellido {
+        grid-area: imp-apellido;
+        width: 70%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 25%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-email {
+        grid-area: imp-email;
+        width: 70%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 25%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-tel {
+        grid-area: imp-tel;
+        width: 70%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 25%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; } }
+
+@media screen and (max-width: 525px) {
+  .main_contacto {
+    background-color: #5695d4af; }
+    .main_contacto .cont-form {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr), 30px, 30px, 100px, 40px;
+      grid-template-areas: "titulo-form titulo-form titulo-form titulo-form" "imp-name imp-name imp-apellido imp-apellido" "imp-email imp-email imp-tel imp-tel" "titulo-cons titulo-cons titulo-cons titulo-cons" "... check check ..." "imp-cons imp-cons imp-cons imp-cons" "botones-form botones-form botones-form botones-form";
+      justify-content: center;
+      justify-items: center;
+      align-items: center; }
+      .main_contacto .cont-form .titulo-form {
+        grid-area: titulo-form;
+        width: 96%;
+        height: 50%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        margin-left: 3%;
+        margin-right: 3%;
+        background-color: #458dd6;
+        border-radius: 10% 10%;
+        color: #0b4c71;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .titulo-cons {
+        grid-area: titulo-cons;
+        width: 90%;
+        height: 40%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: #458dd6;
+        border-radius: 10% 10%;
+        color: #0b4c71;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-name {
+        grid-area: imp-name;
+        width: 90%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-apellido {
+        grid-area: imp-apellido;
+        width: 90%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-email {
+        grid-area: imp-email;
+        width: 90%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; }
+      .main_contacto .cont-form .imp-tel {
+        grid-area: imp-tel;
+        width: 90%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center; } }
+
 .login-form {
   display: grid;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: #1d668d;
+  background-color: #5695d4af;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: "... titulo-login ..." "... imp-user ..." "... imp-pass ..." "... btn-login ..." "... regist-log ..."; }
@@ -614,7 +825,13 @@ body .index_grid {
     display: flex;
     justify-content: center;
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    background-color: #458dd6;
+    border-radius: 10% 10%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5px; }
     .login-form .titulo-login h2 {
       color: #0f364c; }
   .login-form .imp-user {
@@ -659,9 +876,31 @@ body .index_grid {
     align-items: center;
     color: white; }
 
+@media screen and (max-width: 900px) {
+  .login-form {
+    display: grid;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #5695d4af;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "titulo-login titulo-login titulo-login" "imp-user imp-user imp-user" "imp-pass imp-pass imp-pass" "btn-login btn-login btn-login" "regist-log regist-log regist-log"; }
+    .login-form .titulo-login {
+      grid-area: titulo-login;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      background-color: #458dd6;
+      border-radius: 10% 10%;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 5px; } }
+
 .reg-form {
   display: grid;
-  background-color: #1d668d;
+  background-color: #5695d4af;
   padding-top: 5%;
   padding-bottom: 5%;
   grid-template-columns: repeat(3, 1fr);
@@ -673,7 +912,10 @@ body .index_grid {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    width: 100%; }
+    width: 100%;
+    background-color: #458dd6;
+    border-radius: 10% 10%;
+    margin-bottom: 5px; }
     .reg-form .titulo-reg h2 {
       color: #0f364c; }
   .reg-form .uno-reg {
@@ -733,11 +975,34 @@ body .index_grid {
     /*Estilos de los campos imput*/
     width: 46%;
     margin-left: 2%;
-    margin-right: 2%; }
+    margin-right: 2%;
+    background-color: rgba(232, 232, 232, 0.437); }
+
+@media screen and (max-width: 900px) {
+  .reg-form {
+    display: grid;
+    background-color: #5695d4af;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "titulo-reg titulo-reg titulo-reg" "uno-reg uno-reg uno-reg" "dos-reg dos-reg dos-reg" "tres-reg tres-reg tres-reg" "cuatro-reg cuatro-reg cuatro-reg" "... btn-reg ..." "reg-log reg-log reg-log"; }
+    .reg-form .titulo-reg {
+      grid-area: titulo-reg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      background-color: #458dd6;
+      border-radius: 10% 10%;
+      margin-bottom: 5px; } }
 
 footer {
   /*Fondo del footer*/
-  background-image: linear-gradient(to bottom, #0f364c, #0c2635);
+  background-image: linear-gradient(to bottom, #0f364c, #0b4c71);
   /* Aplique gradiente al footer */ }
 
 .footer_grid {

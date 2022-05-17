@@ -8,7 +8,13 @@
 /*CARRUSELES*/
 .titulocarrusel{
     text-align: center;
-    color: $colorfooter;
+    color: $colorfooterfin;
+    background-color: $colorbody;
+    border-radius: 10% 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
 }
 div.carousel {
     margin-bottom: 5px;
@@ -22,7 +28,7 @@ div.carousel {
     object-fit: contain;
     width: 98%;
     height: 300px;
-    border: 2px ridge #0d4a8c;
+    border: 0.5px ridge #828384;
         .carousel-inner {
             display: flex;
             align-items: center;
@@ -45,7 +51,7 @@ div.carousel {
                         transition: transform .2s; 
                     }
                     .zoom:hover {
-                        transform: scale(1.5); 
+                        transform: scale(1.1); 
                         cursor: pointer;
                     }
                     .img_fishhunter {

@@ -20,6 +20,9 @@
             justify-content: center;
             justify-items: center;
             width: $full;
+            background-color: $colorheader;
+            border-radius: 10% 10%;
+            margin-bottom: 5px;
                 h2{
                     color: $colorfooter;
                 }
@@ -88,5 +91,38 @@
             width: 46%;
             margin-left: 2%;
             margin-right: 2%;
+            background-color: map-get($colorbtn, colorsearch);
         }
+}
+
+@media screen and (max-width: 900px) {
+    .reg-form{
+        display: grid;
+        background-color: $colorbody;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-template-areas: 
+        "titulo-reg titulo-reg titulo-reg"
+        "uno-reg uno-reg uno-reg"
+        "dos-reg dos-reg dos-reg"
+        "tres-reg tres-reg tres-reg"
+        "cuatro-reg cuatro-reg cuatro-reg"
+        "... btn-reg ..."
+        "reg-log reg-log reg-log";
+            .titulo-reg{
+                grid-area: titulo-reg;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+                background-color: $colorheader;
+                border-radius: 10% 10%;
+                margin-bottom: 5px;
+            }
+    }
 }

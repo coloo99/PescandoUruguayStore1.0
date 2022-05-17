@@ -1,40 +1,40 @@
 .index_grid_prov {
-    background-color: $colorbody;
+    background-color: $colorbody2 !important;
         .cont_prov {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 20px !important;
             width: 100%;
-            background-color: $colorbody;
+            background-color: $colorbody2 !important;
                 .row-cols-md-2 {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     justify-items: center;
-                    background-color: $colorbody;
+                    background-color: $colorbody2 !important;
                 }
                 div.row_prov {
-                    background-color: $colorbody;
+                    background-color: $colorbody2 !important;
                         .col_prov{
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             justify-items: center;
                             margin-top: 20px !important;
-                            background-color: $colorbody;
+                            background-color: $colorbody2 !important;
                                 .mapa_prov {
                                     width: 100%;
                                     height: 100%;
                                 }
                                 .boton_prov {
                                     box-shadow: 0 0 5px rgba(4, 8, 27, 0.797) !important;
-                                    background-color: $colorbody !important;
+                                    background-color: $colorfooter !important;
                                     color: white !important;
                                 }
                                 .boton_prov:hover {
                                     transform: scale(0.9) !important;
-                                    background-color: rgb(39, 112, 175) !important;
+                                    background-color: rgb(18, 100, 172) !important;
                                 }
                         }
                 }
