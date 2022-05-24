@@ -15,7 +15,7 @@ body{
         "itemc7 itemc8 itemc9";
         width: $full;
         height: 4500px;
-        background-color: $colorbody2;
+        background-color: $colorbody;
             img{
                 width: 70%;
                 height: 55%;
@@ -48,17 +48,20 @@ body{
             /*Seccion señuelos*/
             .item {
                 grid-area: titulo;
-                object-fit: contain;
-                text-align: center;
-                color: $colorfooter;
-                height: 70%;
-                width: 40%;
                 border: 2px solid $colorfooterfin;
-                margin-top: 1%;
-                margin-left: 30%;
-                margin-right: 30%;
-                margin-bottom: 1%;
-                background-color: $colordivproductos;
+                width: 60%;
+                height: 70%;
+                margin-top: 20px;
+                margin-bottom: 5%;
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color: $colorheader;
+                border-radius: 10% 10%;
+                color: $colorfooterfin;
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
             }
             .item1 {
                 grid-area: item1;
@@ -186,17 +189,20 @@ body{
             /*Seccion Cañas*/  
             .itemc {
                 grid-area: tituloc;
-                object-fit: contain;
-                text-align: center;
-                color: $colorfooter;
+                border: 2px solid $colorfooterfin;
+                width: 60%;
                 height: 70%;
-                width: 40%;
-                border: 1px solid $colorfooterfin;
-                margin-top: 1%;
-                margin-left: 30%;
-                margin-right: 30%;
-                margin-bottom: 1%;
-                background-color: $colordivproductos;
+                margin-top: 20px;
+                margin-bottom: 5%;
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color: $colorheader;
+                border-radius: 10% 10%;
+                color: $colorfooterfin;
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
             }
             .itemc1 {
                 grid-area: itemc1;
@@ -294,7 +300,19 @@ body{
             "itemc9 itemc9";
             width: $full;
             height: 4000px;
-            background-color: $colorbody2;
+            background-color: $colorbody;
+                .itemc {
+                    margin-bottom: 10%;
+                    margin-top: 10px;
+                }
+                .item {
+                    margin-bottom: 10%;
+                    margin-top: 10px;
+                }
+        }
+        .footer_grid {
+            margin-bottom: 0px;
+            bottom: 0;
         }
     }
 }
@@ -302,13 +320,48 @@ body{
 @media (max-width: 1100px) {
     body{
         .index_grid {
-            height: 2700px;
+            height: 4500px;
                 .card-body .btn-fav{
                     height: 80%;
                     width: 50%;
                     margin-left: 25%;
                     margin-right: 25%;
                 }
+                .itemc {
+                    margin-bottom: 10%;
+                    margin-top: 10px;
+                }
+                .item {
+                    margin-bottom: 10%;
+                    margin-top: 10px;
+                }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    body{
+        .index_grid {
+            .card-body .btn-fav{
+                height: 80%;
+                width: 40px;
+                margin-left: 0px;
+                margin-right: 5%;
+            }
+            .btn-comp{
+                height: 80%;
+                width: 65%;
+                margin-right: 1px;
+            }
+            .btn{
+                margin-left: 0px;
+                margin-right: 0px;
+                font-size: small;
+            }
+        }
+        .footer_grid {
+            margin-bottom: 0px;
+            bottom: 0;
         }
     }
 }
