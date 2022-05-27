@@ -1,7 +1,6 @@
 body{
     .index_grid {
         display: grid;
-        /*grid-template-rows: 50px repeat(3, 1fr) 50px repeat(3, 1fr);*/
         grid-template-rows: 2% 16% 16% 16% 2% 16% 16% 16%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
