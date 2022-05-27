@@ -138,17 +138,14 @@ div.carousel {
       div.carousel .carousel-inner .carousel-item .zoom:hover {
         transform: scale(1.1);
         cursor: pointer; }
-      div.carousel .carousel-inner .carousel-item .img_fishhunter {
-        height: 600px;
-        margin-bottom: 110px; }
-      div.carousel .carousel-inner .carousel-item .img_rapalashad {
-        margin-bottom: 110px; }
-      div.carousel .carousel-inner .carousel-item .img_cañacocodrilofibra {
-        height: 200px; }
-      div.carousel .carousel-inner .carousel-item .img_cañadaiwalaguna {
-        height: 600px; }
-      div.carousel .carousel-inner .carousel-item .img_cañafly {
-        height: 400px; }
+      div.carousel .carousel-inner .carousel-item .img_spoon-lure {
+        height: 230px; }
+      div.carousel .carousel-inner .carousel-item .img_cania_abu_casting {
+        height: 250px; }
+      div.carousel .carousel-inner .carousel-item .img_cania_hielo {
+        height: 500px; }
+      div.carousel .carousel-inner .carousel-item .img_cania_recreacion_ninio {
+        height: 250px; }
   div.carousel .boton_carrusel {
     opacity: 0.2 !important;
     background-color: rgba(118, 170, 221, 0.387); }
